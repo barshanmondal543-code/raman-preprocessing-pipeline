@@ -14,12 +14,12 @@ from datetime import datetime
 # Input things
 ###############################################################################
 
-folder_path = '' #  path to folder containing multiple files for batch processing (leave empty for single file)
-file_path   = '/Users/barshanmondal/Raman Review paper/cholesterol_all_corruptions.csv' # path to single file (leave empty for batch processing)
-output_folder = '/Users/barshanmondal/Raman Review paper' # folder where all processed files will be saved
+folder_path = "" #  path to folder containing multiple files for batch processing (leave empty for single file)
+file_path   = "" # path to single file (leave empty for batch processing)
+output_folder = "" # folder where all processed files will be saved
 
-x_axis_file_path = '/Users/barshanmondal/Raman Review paper/cholesterol_all_corruptions.csv'
-SILICON_REFERENCE_FILE = ''  # Path to silicon reference spectrum
+x_axis_file_path = "" # path to single file that you want to usage as x axis.
+SILICON_REFERENCE_FILE = ""  # Path to silicon reference spectrum
 
 ###############################################################################
 # Preprocessing Algorithm Selection
@@ -44,17 +44,17 @@ ENABLE_NORMALIZATION       = True
 # ADVANCED PLOTTING CONFIGURATION
 ###############################################################################
 # Plot Mode
-PLOT_MODE = "all"
+PLOT_MODE = "first"
 # ! none | first | first_per_file | selected | random | all
 
 # Plot Saving ( True    False   )
 ENABLE_PLOT_SAVING = True  
 
 # Save Normalized TXT File ( True    False   )
-SAVE_NORMALIZED_TXT = False
+SAVE_NORMALIZED_TXT = True
 
 # Plot Display
-SHOW_PLOTS = False
+SHOW_PLOTS = True
 
 # Processing Stage Plots
 PLOT_RAW = True     
@@ -65,21 +65,21 @@ PLOT_NORMALIZATION = True
 PLOT_BASELINE_CORRECTED_NORMAL = True
 PLOT_FINAL = True
 
-PLOT_CALIBRATION = False        # * Plot the calibration offset like where it shoukd be and where it is comming.
+PLOT_CALIBRATION = True        # * Plot the calibration offset like where it shoukd be and where it is comming.
 
 ###############################################################################
 # WAVENUMBER CALIBRATION CONFIGURATION
 ###############################################################################
 
 # Enable / Disable ( True    False   )
-ENABLE_WAVENUMBER_CALIBRATION = False
+ENABLE_WAVENUMBER_CALIBRATION = True
 
 # Calibration Method
 CALIBRATION_TOOL = "Constant Offset"
 # Constant Offset | Linear Calibration | Polynomial Calibration
 
 # Output
-SHOW_CALIBRATION_PLOT = False
+SHOW_CALIBRATION_PLOT = True
 SAVE_CALIBRATION_REPORT = True
 
 ###############################################################################
